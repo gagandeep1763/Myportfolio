@@ -1,0 +1,276 @@
+*{
+    margin:0;
+    padding:0;
+    text-decoration:none;
+    list-style:none;
+    font-family: 'Poppins', sans-serif;
+    box-sizing:border-box;
+}
+
+.header{
+    position:fixed;
+    top:0;
+    left:0;
+    padding:40px 12%;
+    background-color: rgb(0, 0, 0); 
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:100;
+    width:100%;
+}
+
+
+.logo{
+    font-size:25px;
+    color: white;
+    font-weight:600;
+    transition:0.3s ease;
+}
+
+.logo:hover{
+    color: orangered;
+    text-shadow: 0 0 50px orangered;
+    transform:scale(1.1);
+}
+
+span{
+    color:orangered;
+}
+
+
+.navbar a{
+    font-size:18px;
+    font-weight:600;
+    margin:0 20px;
+    border-bottom: 2px solid transparent;
+    color:white;
+    transition: 0.3s ease;
+}
+.navbar a.active, 
+.navbar a:hover{
+    color:orangered;
+    border-bottom: 2px solid orangered;
+}
+
+.contact{
+    padding:10px 20px;
+    background-color: whitesmoke;
+    color:black;
+    border-radius:8px;
+    border:2px solid transparent white;
+    font-size: 16px;
+    font-weight:500;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+}
+
+.contact:hover{
+    background-color: orangered;
+    box-shadow: 0 0 25px orangered;
+    color: white;
+}
+
+.home{
+    display:flex;
+    align-items:center;
+    padding:30px 12% 0;
+    gap:7em;
+    background: white;
+    width:100%;
+    min-height: 100vh;
+}
+
+.home-content{
+    max-width:800px;
+}
+
+.home-content h3{
+    margin-top:30px;
+    font-size: 40px;
+}
+
+.home-content h1{
+    font-size: 40px;
+    line-height:1.2;
+}
+
+.home-content p{
+    font-size:18px;
+    margin:25px 0 35px;
+}
+
+
+.btn-box{
+    width:345px;
+    display:flex;
+    gap:2em;
+}
+
+.btn-1{
+    padding:15px 30px;
+    background-color:black;
+    color:white;
+    border-radius:8px;
+    border:2px solid black transparent;
+    font-size: 16px;
+    font-weight:500;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+} 
+
+.btn-1:hover{
+    background-color: lightblue;
+    border: 2px solid black;
+    color: black;
+}
+
+.btn-2{
+    padding:15px 30px;
+    background-color: white;
+    color:black;
+    border-radius:8px;
+    border:2px solid black transparent;
+    font-size: 16px;
+    font-weight:500;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+} 
+
+.btn-2:hover{
+    background-color: orangered;
+    border: 2px solid black;
+    color: black;
+}
+
+.btn-3{
+    padding:15px 30px;
+    background-color: blue;
+    color:black;
+    border-radius:8px;
+    border:2px solid black transparent;
+    font-size: 16px;
+    font-weight:500;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+} 
+
+.btn-3:hover{
+    background-color: lightgreen;
+    border: 2px solid black;
+    color: black;
+}
+
+.img-box img{
+    border-radius: 50%;
+    width: 400px;
+    height: 400px; 
+    object-fit: cover; 
+    margin-top:50px;
+}
+
+.about{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    padding:12% 8%;
+    gap:2em;
+    background: black;
+}
+
+.about-img img{
+    position:relative;
+    width:330px;
+    box-shadow: 0 0 25px orangered;
+    border-radius: 50%;
+}
+
+.about-content h2{
+    font-size: 42px;
+    color:orangered;
+}
+
+.about-content h3{
+    font-size: 50px;
+    color:white;
+    margin-top:-20px;
+    margin-bottom:10px;
+}
+
+.about-content p{
+    font-size:20px;
+    color:white;
+    margin:1em 0 2em;
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 60px;
+}
+
+.contact-form form {
+    max-width: 50em;
+    text-align: center;
+    margin: 1rem auto;
+    margin-bottom: 3em;
+}
+
+.input-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.input-box input,textarea{
+    width: 100%;
+    padding: 1.5em;
+    font-size: 18px;
+    color: black;
+    background-color: rgb(241, 241, 241);
+    border-radius: 0.8rem;
+    margin: 1rem 0;
+    border: none;
+}
+
+.footer{
+    position:relative;
+    width:100%;
+    bottom:0;
+    padding:40px 0;
+    background:black;
+}
+
+.footer ul{
+    margin-top:0;
+    margin-bottom:0;
+    padding:0;
+    line-height: 1.6;
+    text-align:center;
+    font-size:18px;
+}
+
+.footer ul li a{
+    color:white;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s ease;
+}
+
+.footer ul li a:hover{
+    border-bottom: 2px solid orangered;
+}
+
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+
+
+.footer p {
+    margin-top: 1rem;
+    font-size: 12px;
+    color: white;
+    text-align:center;
+}
